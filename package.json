@@ -2,7 +2,7 @@
   "name": "todo-list-front-end",
   "version": "0.1.0",
   "description": "TO Do List front end",
-  "source":"/src/index.html" ,
+  "source":"/src/login.html" ,
   "scripts": {
     "watch": "tsc --watch",
     "build": "parcel build",
