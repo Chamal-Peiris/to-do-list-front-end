@@ -1,0 +1,18 @@
+#container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#signup-box{
+    position: relative;
+    width: 40%;
+    height: 75%;
+    top: 15%;
+    left: 35%;
+    border: 3px solid black;
+}
+
+.indicator{
+    width: 80%;
+}
