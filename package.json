@@ -2,14 +2,16 @@
   "name": "todo-list-front-end",
   "version": "0.1.0",
   "description": "TO Do List front end",
+  "source": [
+    "src/todo.html"
+  ],
   "scripts": {
     "watch": "tsc --watch",
     "build": "parcel build",
     "start": "parcel"
   },
   "keywords": [],
-  "author": "MIT",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "parcel": "^2.5.0"
   },

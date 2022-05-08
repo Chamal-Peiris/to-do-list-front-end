@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO Do List</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/page/todo.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="ts/page/todo.ts"></script>
+
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <h1>TO Do INPUTS</h1>
+                <form id="frm-todo">
+                    <div class="mb-3">
+                        <label for="to-do-name" class="form-label">To Do Name</label>
+                        <input type="text" class="form-control" id="to-do-name" placeholder="Homwork...">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="to-do-desc" class="form-label">Description</label>
+                        <input  type="text" class="form-control" id="to-do-desc" placeholder="Description...">
+                    </div>
+                    <button type="submit" class="btn btn-warning ">Add+</button>
+                </form>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+<div class="container mt-5">
+    <h1>Pending</h1>
+    <table id="tbl-pending" class="table table-dark table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Status</th>
+            <th scope="col">To Do Name</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+    <div class="container mt-5">
+        <h1>Completed</h1>
+        <table id="tbl-completed" class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Status</th>
+                <th scope="col">To Do Name</th>
+                <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
