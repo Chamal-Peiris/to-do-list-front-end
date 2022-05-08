@@ -9,6 +9,8 @@ const txtSingupEmail=document.querySelector<HTMLInputElement>("#txtEmail")!;
 const txtSingupPassword=document.querySelector<HTMLInputElement>("#txtPassword")!;
 const txtSingupConfirmPassword=document.querySelector<HTMLInputElement>("#txtConfirmPassword")!;
 
+
+
 let emailValidationRegEx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 let passwordValidationRegEx=/([A-Za-z0-9 ])+/;
 
@@ -19,6 +21,7 @@ btnSignup.addEventListener('click',ev => {
         txtSingupEmail.value="";
         txtSingupPassword.value="";
         txtSingupConfirmPassword.value="";
+
     }
 
 
@@ -33,7 +36,6 @@ btnReset.addEventListener('click',ev => {
 
 btnLoginPage.addEventListener('click',ev => {
     window.location.href = "index.html";
-
 });
 
 
@@ -52,6 +54,7 @@ function passwordValidation(name:string):boolean{
         return false;
     }
 }
+
 
 
 

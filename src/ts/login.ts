@@ -14,7 +14,17 @@ let passwordValidationRegEx=/([A-Za-z0-9 ])+/;
 
 btnLogin.addEventListener('click',(e)=> {
         if(emailValidation(txtEmail.value) && passwordValidation(txtPassword.value)){
-            /*send login request*/
+            const request=new XMLHttpRequest();
+            request.onreadystatechange=()=>{
+                console.log('Badu awaaa');
+            }
+
+            const requestData=`{'email'='${txtEmail.value}','password':${txtPassword.value}`;
+            request.open('POST','www.google.lk');
+            request.setRequestHeader('Content-type','application/json');
+            request.send(requestData);
+
+
         }else{
            txtEmail.value="";
            txtPassword.value="";
