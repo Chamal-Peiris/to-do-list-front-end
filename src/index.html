@@ -5,19 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>TO-DO|Login</title>
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+   <script type="module" defer src="./ts/login.ts"></script>
 </head>
 <body>
-        <div class="container row center-container">
-           <H1>To-DO App</H1>
-            <div class="col-12 header">
-            </div>
-            <div class="col-4">
-                <button type="button" class="btn btn-outline-primary">Signup</button>
-                <button type="button" class="btn btn-outline-primary">Login</button>
+        <div class="container-fluid">
+            <div id="container" class="row">
+                <div id="loging-box" class="col-8 animate__animated animate__backInDown">
+                        <center><h3 class="">TO-DO</h3></center>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Email address</label>
+                                    <input  id="txtEmail" type="email" class="form-control btn-outline-info">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control btn-outline-info" id="txtPassword" >
+                                </div>
+                                <center>
+                                    <button id="btnLogin" type="button" class="btn btn-success btn-lg">Login</button>
+                                    <button id="btnCancel" type="button" class="btn btn-danger btn-lg">Cancel</button>
+                                </center>
+                                <center>or</center>
+                                <center><button id="btnNewUser" type="button" class="btn btn-outline-dark">Registr as a new user</button></center>
+                            </form>
+
+                </div>
             </div>
         </div>
+
+
 </body>
 </html>

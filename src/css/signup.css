@@ -4,11 +4,15 @@
     width: 100%;
 }
 
-#loging-box{
+#signup-box{
     position: relative;
     width: 40%;
-    height: 60%;
+    height: 75%;
     top: 15%;
     left: 35%;
     border: 3px solid black;
+}
+
+.indicator{
+    width: 80%;
 }
