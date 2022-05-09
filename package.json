@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "TO Do List front end",
   "source": [
-    "/src/index.html",
+    "/src/login.html",
     "/src/signup.html",
-    "src/todo.html"
+    "/src/index.html",
+    "/src/welcome.html"
   ],
   "scripts": {
     "watch": "tsc --watch",

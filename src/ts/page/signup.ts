@@ -38,7 +38,7 @@ btnReset.addEventListener('click',ev => {
 });
 
 btnLoginPage.addEventListener('click',ev => {
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 });
 
 

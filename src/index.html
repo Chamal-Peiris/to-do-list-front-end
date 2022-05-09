@@ -5,56 +5,70 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TO-DO|Login</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
-   <script type="module" defer src="./ts/login.ts"></script>
+    <title>TO Do List</title>
+    <script src="ts/routes.ts"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/page/todo.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script defer src="ts/page/index.ts"></script>
+
 </head>
 <body>
-<div class="wrapper">
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-    <div><span class="dot"></span></div>
-</div>
 
-        <div class="container-fluid">
-            <div id="container" class="row">
-                <div id="loging-box" class="col-8 animate__animated animate__backInDown rounded">
-                        <center><h3 class="">Login</h3></center>
-                            <form>
-                                <div class="mb-3">
-                                    <label class="form-label">Email address</label>
-                                    <input  id="txtEmail" type="email" class="form-control btn-outline-info">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Password</label>
-                                    <input type="password" class="form-control btn-outline-info" id="txtPassword" >
-                                </div>
-                                <center>
-                                    <button id="btnLogin" type="button" class="btn btn-success btn-lg">Login</button>
-                                    <button id="btnCancel" type="button" class="btn btn-danger btn-lg">Cancel</button>
-                                </center>
-                                <center>or</center>
-                                <center><button id="btnNewUser" type="button" class="btn btn-outline-dark">Reagister as a new user</button></center>
-                            </form>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <h1>TO Do INPUTS</h1>
+                <form id="frm-todo">
+                    <div class="mb-3">
+                        <label for="to-do-name" class="form-label">To Do Name</label>
+                        <input type="text" class="form-control" id="to-do-name" placeholder="Homwork...">
 
-                </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="to-do-desc" class="form-label">Description</label>
+                        <input  type="text" class="form-control" id="to-do-desc" placeholder="Description...">
+                    </div>
+                    <button type="submit" class="btn btn-warning ">Add+</button>
+                </form>
+            </div>
+            <div class="col">
+
             </div>
         </div>
+    </div>
+<div class="container mt-5">
+    <h1>Pending</h1>
+    <table id="tbl-pending" class="table table-dark table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Status</th>
+            <th scope="col">To Do Name</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+    <div class="container mt-5">
+        <h1>Completed</h1>
+        <table id="tbl-completed" class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Status</th>
+                <th scope="col">To Do Name</th>
+                <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
 
 
 </body>
