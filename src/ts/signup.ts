@@ -4,6 +4,7 @@ export
 const btnSignup=document.querySelector<HTMLButtonElement>("#btnSignup")!;
 const btnReset =document.querySelector<HTMLButtonElement>("#btnCancel")!;
 const btnLoginPage=document.querySelector<HTMLButtonElement>("#btnLoginPage")!;
+const passwordDiv=document.querySelector('#password-div')!;
 
 const txtSingupEmail=document.querySelector<HTMLInputElement>("#txtEmail")!;
 const txtSingupPassword=document.querySelector<HTMLInputElement>("#txtPassword")!;
@@ -13,6 +14,8 @@ const txtSingupConfirmPassword=document.querySelector<HTMLInputElement>("#txtCon
 
 let emailValidationRegEx = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 let passwordValidationRegEx=/([A-Za-z0-9 ])+/;
+
+
 
 btnSignup.addEventListener('click',ev => {
     if(emailValidation(txtSingupEmail.value) && passwordValidation(txtSingupPassword.value) && txtSingupPassword.value===txtSingupConfirmPassword.value){

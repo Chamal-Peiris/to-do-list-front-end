@@ -19,10 +19,13 @@ btnLogin.addEventListener('click',(e)=> {
                 console.log('Badu awaaa');
             }
 
-            const requestData=`{'email'='${txtEmail.value}','password':${txtPassword.value}`;
-            request.open('POST','www.google.lk');
+            const jsobj={userName:txtEmail.value,passWord:txtPassword.value}
+            var jsonObj=JSON.stringify(jsobj);
+
+            request.open('POST','http://localhost/todo/auth/');
             request.setRequestHeader('Content-type','application/json');
-            request.send(requestData);
+            console.log(jsonObj);
+            request.send(jsonObj);
 
 
         }else{
